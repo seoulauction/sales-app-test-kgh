@@ -9,15 +9,16 @@ const [selectedIndex, setSelectedIndex] = useState(0);
 const [selectedIndexes, setSelectedIndexes] = useState([0, 2, 3, 4, 5, 6]);
   return (
     <View style={styles.container}>
-      <Text>서울옥션 영업관리 App</Text>
-      <StatusBar style="auto" />
+      <View style={{flex: 1, backgroundColor: 'red'}} />
+      <View style={{flex: 2, backgroundColor: 'darkorange'}} />
       <ButtonGroup
-      buttons={['로그인', '캘린더', '영업', '고객', '계약', '실적']}
-      selectedIndex={selectedIndex}
-      onPress={(value) => {
-        setSelectedIndex(value);
-      }}
-      containerStyle={{ marginBottom: 20 }}
+        buttons={['로그인', '캘린더', '영업', '고객', '계약', '실적']}
+        style={{flex: 3, backgroundColor: 'green'}}
+        selectedIndex={selectedIndex}
+        onPress={(value) => {
+          setSelectedIndex(value);
+        }}
+        containerStyle={{ marginBottom: 50, height: 80, }}
     />
     </View>
   );
@@ -26,8 +27,9 @@ const [selectedIndexes, setSelectedIndexes] = useState([0, 2, 3, 4, 5, 6]);
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection:'column',
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
 });
