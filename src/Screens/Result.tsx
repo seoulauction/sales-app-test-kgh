@@ -5,7 +5,7 @@ export default function Result({ navigation }) {
   return (
     <View>
       <Text>실적</Text>
-      <Button title="Go to Login" onPress={() => navigation.navigate('Login')} />
+      <Button title="Go to 캘린더" onPress={() => navigation.navigate('Calendar')} />
     </View>
   );
 }
