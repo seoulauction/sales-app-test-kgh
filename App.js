@@ -5,16 +5,15 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { View, Text, Button, StyleSheet } from 'react-native';
 
 import Result from "./src/Screens/Result";
-import CalendarScreen from "./src/Screens/Calendar";
+import Contract from "./src/Screens/Contract";
 
 const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer style={styles.container}>
-      <Stack.Navigator initialRouteName="CalendarScreen">
-        <Stack.Screen name="Result" component={Result} />
-        <Stack.Screen name="CalendarScreen" component={CalendarScreen} />
+      <Stack.Navigator initialRouteName="Contract">
+        <Stack.Screen name="Contract" component={Contract} />
       </Stack.Navigator>
       
     </NavigationContainer>
