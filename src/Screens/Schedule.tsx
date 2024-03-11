@@ -1,25 +1,14 @@
-import { StyleSheet, Text, View } from 'react-native';
-import { Button } from '@rneui/themed';
+import { StyleSheet, View } from 'react-native';
+import { Button, Card, Text } from '@rneui/themed';
 import React, { useState } from 'react';
-import { BorderlessButton } from 'react-native-gesture-handler';
-import { Calendar } from 'react-native-calendars';
 
-export default function CalendarScreen({ navigation }) {
+export default function Schedule({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.wrapContainer}>
-        <Calendar></Calendar>
+        <Text>일정 화면</Text>
       </View>
       <View style={styles.btm}>
-        <Button
-          size="lg"
-          containerStyle={{ borderRadius: 0 }}
-          buttonStyle={{ borderRadius: 0 }}
-          type="outline"
-          onPress={() => navigation.navigate('Result')}
-        >
-          캘린더
-        </Button>
         <Button
           size="lg"
           containerStyle={{ borderRadius: 0 }}
@@ -34,7 +23,7 @@ export default function CalendarScreen({ navigation }) {
           containerStyle={{ borderRadius: 0 }}
           buttonStyle={{ borderRadius: 0 }}
           type="outline"
-          onPress={() => navigation.navigate('Sales')}
+          onPress={() => navigation.navigate('Customer')}
         >
           고객
         </Button>
@@ -43,7 +32,7 @@ export default function CalendarScreen({ navigation }) {
           containerStyle={{ borderRadius: 0 }}
           buttonStyle={{ borderRadius: 0 }}
           type="outline"
-          onPress={() => navigation.navigate('Sales')}
+          onPress={() => navigation.navigate('Contract')}
         >
           계약
         </Button>
@@ -52,9 +41,18 @@ export default function CalendarScreen({ navigation }) {
           containerStyle={{ borderRadius: 0 }}
           buttonStyle={{ borderRadius: 0 }}
           type="outline"
-          onPress={() => navigation.navigate('Sales')}
+          onPress={() => navigation.navigate('Result')}
         >
           실적
+        </Button>
+        <Button
+          size="lg"
+          containerStyle={{ borderRadius: 0 }}
+          buttonStyle={{ borderRadius: 0 }}
+          type="outline"
+          onPress={() => navigation.navigate('Schedule')}
+        >
+          일정
         </Button>
       </View>
     </View>
@@ -69,8 +67,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   wrapContainer: {
-    backgroundColor: 'pink',
-    height: 'auto',
+    padding: 10,
+    height: 100,
   },
   btm: {
     height: 100,

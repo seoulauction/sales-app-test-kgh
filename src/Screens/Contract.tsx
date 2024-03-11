@@ -42,15 +42,6 @@ export default function Contract({ navigation }) {
           type="outline"
           onPress={() => navigation.navigate('Sales')}
         >
-          일정
-        </Button>
-        <Button
-          size="lg"
-          containerStyle={{ borderRadius: 0 }}
-          buttonStyle={{ borderRadius: 0 }}
-          type="outline"
-          onPress={() => navigation.navigate('Sales')}
-        >
           영업
         </Button>
         <Button
@@ -58,7 +49,7 @@ export default function Contract({ navigation }) {
           containerStyle={{ borderRadius: 0 }}
           buttonStyle={{ borderRadius: 0 }}
           type="outline"
-          onPress={() => navigation.navigate('Sales')}
+          onPress={() => navigation.navigate('Customer')}
         >
           고객
         </Button>
@@ -67,7 +58,7 @@ export default function Contract({ navigation }) {
           containerStyle={{ borderRadius: 0 }}
           buttonStyle={{ borderRadius: 0 }}
           type="outline"
-          onPress={() => navigation.navigate('Sales')}
+          onPress={() => navigation.navigate('Contract')}
         >
           계약
         </Button>
@@ -76,9 +67,18 @@ export default function Contract({ navigation }) {
           containerStyle={{ borderRadius: 0 }}
           buttonStyle={{ borderRadius: 0 }}
           type="outline"
-          onPress={() => navigation.navigate('Sales')}
+          onPress={() => navigation.navigate('Result')}
         >
           실적
+        </Button>
+        <Button
+          size="lg"
+          containerStyle={{ borderRadius: 0 }}
+          buttonStyle={{ borderRadius: 0 }}
+          type="outline"
+          onPress={() => navigation.navigate('Schedule')}
+        >
+          일정
         </Button>
       </View>
     </View>
