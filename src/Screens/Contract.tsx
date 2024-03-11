@@ -7,30 +7,30 @@ export default function Contract({ navigation }) {
     <View style={styles.container}>
       <View style={styles.wrapContainer}>
         <Card>
-          <Text h4>김선우 작가 작품 위탁</Text>
+          <Text style={styles.title}>김선우 작가 작품 위탁</Text>
           <Text>2024.06.01</Text>
           <Text>위탁 대금 상세</Text>
           <Text>고객 정보</Text>
           <Button size="sm" type="clear">
-            더보기
+            <Text style={styles.more}>더보기</Text>
           </Button>
         </Card>
         <Card>
-          <Text h4>장마리아 작품 의뢰</Text>
+          <Text style={styles.title}>장마리아 작품 의뢰</Text>
           <Text>2024.06.01</Text>
           <Text>위탁 대금 상세</Text>
           <Text>고객 정보</Text>
           <Button size="sm" type="clear">
-            더보기
+            <Text style={styles.more}>더보기</Text>
           </Button>
         </Card>
         <Card>
-          <Text h4>김선우 작가 작품 위탁</Text>
+          <Text style={styles.title}>김선우 작가 작품 위탁</Text>
           <Text>2024.06.01</Text>
           <Text>위탁 대금 상세</Text>
           <Text>고객 정보</Text>
           <Button size="sm" type="clear">
-            더보기
+            <Text style={styles.more}>더보기</Text>
           </Button>
         </Card>
       </View>
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   wrapContainer: {
-    backgroundColor: 'lightgray',
+    backgroundColor: '#F2F7FF',
     height: 'auto',
   },
   btm: {
@@ -103,5 +103,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginBottom: 20,
     flex: 1,
+  },
+  more: {
+    color: '#1A6DFF',
+    fontWeight: '400',
+  },
+  title: {
+    color: '#141719',
+    fontSize: 20,
+    paddingBottom: 5,
   },
 });
