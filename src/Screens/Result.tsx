@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { Button } from '@rneui/themed';
 import React, { useState } from 'react';
+import { Icon } from '@rneui/themed';
 
 export default function Result({ navigation }) {
   return (
@@ -12,47 +13,102 @@ export default function Result({ navigation }) {
         <Button
           size="lg"
           containerStyle={{ borderRadius: 0 }}
-          buttonStyle={{ borderRadius: 0 }}
+          buttonStyle={{ borderRadius: 0, backgroundColor: '#1A6DFF' }}
           type="outline"
           onPress={() => navigation.navigate('Sales')}
         >
-          영업
+          <Icon
+            color="#fff"
+            containerStyle={{}}
+            disabledStyle={{}}
+            iconStyle={{ marginRight: 5, marginTop: 3 }}
+            name="insert-chart"
+            onLongPress={() => console.log('onLongPress()')}
+            onPress={() => console.log('onPress()')}
+            size={20}
+            type="material"
+          />
+          <Text style={styles.gnbTxt}>영업</Text>
         </Button>
         <Button
           size="lg"
           containerStyle={{ borderRadius: 0 }}
-          buttonStyle={{ borderRadius: 0 }}
+          buttonStyle={{ borderRadius: 0, backgroundColor: '#1A6DFF' }}
           type="outline"
           onPress={() => navigation.navigate('Customer')}
         >
-          고객
+          <Icon
+            color="#fff"
+            containerStyle={{}}
+            disabledStyle={{}}
+            iconStyle={{ marginRight: 5, marginTop: 3 }}
+            name="people"
+            onLongPress={() => console.log('onLongPress()')}
+            onPress={() => console.log('onPress()')}
+            size={20}
+            type="material"
+          />
+          <Text style={styles.gnbTxt}>고객</Text>
         </Button>
         <Button
           size="lg"
           containerStyle={{ borderRadius: 0 }}
-          buttonStyle={{ borderRadius: 0 }}
+          buttonStyle={{ borderRadius: 0, backgroundColor: '#1A6DFF' }}
           type="outline"
           onPress={() => navigation.navigate('Contract')}
         >
-          계약
+          <Icon
+            color="#fff"
+            containerStyle={{}}
+            disabledStyle={{}}
+            iconStyle={{ marginRight: 5, marginTop: 3 }}
+            name="edit-document"
+            onLongPress={() => console.log('onLongPress()')}
+            onPress={() => console.log('onPress()')}
+            size={20}
+            type="material"
+          />
+          <Text style={styles.gnbTxt}>계약</Text>
         </Button>
         <Button
           size="lg"
           containerStyle={{ borderRadius: 0 }}
-          buttonStyle={{ borderRadius: 0 }}
+          buttonStyle={{ borderRadius: 0, backgroundColor: '#1A6DFF' }}
           type="outline"
           onPress={() => navigation.navigate('Result')}
         >
-          실적
+          <Icon
+            color="#fff"
+            containerStyle={{}}
+            disabledStyle={{}}
+            iconStyle={{ marginRight: 5, marginTop: 3 }}
+            name="format-list-numbered"
+            onLongPress={() => console.log('onLongPress()')}
+            onPress={() => console.log('onPress()')}
+            size={20}
+            type="material"
+          />
+          <Text style={styles.gnbTxt}>실적</Text>
         </Button>
         <Button
           size="lg"
           containerStyle={{ borderRadius: 0 }}
-          buttonStyle={{ borderRadius: 0 }}
+          buttonStyle={{ borderRadius: 0, backgroundColor: '#1A6DFF' }}
           type="outline"
           onPress={() => navigation.navigate('Schedule')}
         >
-          일정
+          <Icon
+            color="#fff"
+            containerStyle={{}}
+            disabledStyle={{}}
+            iconStyle={{ marginRight: 5, marginTop: 3 }}
+            name="calendar-month"
+            onLongPress={() => console.log('onLongPress()')}
+            onPress={() => console.log('onPress()')}
+            size={20}
+            type="material"
+          />
+          <Text style={styles.gnbTxt}>일정</Text>
         </Button>
       </View>
     </View>
@@ -69,6 +125,11 @@ const styles = StyleSheet.create({
   wrapContainer: {
     padding: 10,
     height: 100,
+  },
+  gnbTxt: {
+    color: '#fff',
+    fontWeight: '400',
+    fontSize: 15,
   },
   btm: {
     height: 100,
