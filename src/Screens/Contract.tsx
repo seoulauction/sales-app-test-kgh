@@ -1,40 +1,70 @@
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, ScrollView } from 'react-native';
 import { Button, Card, Text } from '@rneui/themed';
 import React, { useState } from 'react';
 import { Icon } from '@rneui/themed';
 
 export default function Contract({ navigation }) {
   return (
-    <View style={styles.container}>
-      <View style={styles.wrapContainer}>
-        <Card>
-          <Text style={styles.title}>김선우 작가 작품 위탁</Text>
-          <Text>2024.06.01</Text>
-          <Text>위탁 대금 상세</Text>
-          <Text>고객 정보</Text>
-          <Button size="sm" type="clear">
-            <Text style={styles.more}>더보기</Text>
-          </Button>
-        </Card>
-        <Card>
-          <Text style={styles.title}>장마리아 작품 의뢰</Text>
-          <Text>2024.06.01</Text>
-          <Text>위탁 대금 상세</Text>
-          <Text>고객 정보</Text>
-          <Button size="sm" type="clear">
-            <Text style={styles.more}>더보기</Text>
-          </Button>
-        </Card>
-        <Card>
-          <Text style={styles.title}>김선우 작가 작품 위탁</Text>
-          <Text>2024.06.01</Text>
-          <Text>위탁 대금 상세</Text>
-          <Text>고객 정보</Text>
-          <Button size="sm" type="clear">
-            <Text style={styles.more}>더보기</Text>
-          </Button>
-        </Card>
-      </View>
+    <View>
+      <ScrollView style={styles.container}>
+        <View style={styles.wrapContainer}>
+          <Card>
+            <Text style={styles.title}>김선우 작가 작품 위탁</Text>
+            <Text>2024.06.01</Text>
+            <Text>위탁 대금 상세</Text>
+            <Text>고객 정보</Text>
+            <Button size="sm" type="clear">
+              <Text style={styles.more}>더보기</Text>
+            </Button>
+          </Card>
+          <Card>
+            <Text style={styles.title}>장마리아 작품 의뢰</Text>
+            <Text>2024.06.01</Text>
+            <Text>위탁 대금 상세</Text>
+            <Text>고객 정보</Text>
+            <Button size="sm" type="clear">
+              <Text style={styles.more}>더보기</Text>
+            </Button>
+          </Card>
+          <Card>
+            <Text style={styles.title}>김선우 작가 작품 위탁</Text>
+            <Text>2024.06.01</Text>
+            <Text>위탁 대금 상세</Text>
+            <Text>고객 정보</Text>
+            <Button size="sm" type="clear">
+              <Text style={styles.more}>더보기</Text>
+            </Button>
+          </Card>
+          <Card>
+            <Text style={styles.title}>김선우 작가 작품 위탁</Text>
+            <Text>2024.06.01</Text>
+            <Text>위탁 대금 상세</Text>
+            <Text>고객 정보</Text>
+            <Button size="sm" type="clear">
+              <Text style={styles.more}>더보기</Text>
+            </Button>
+          </Card>
+          <Card>
+            <Text style={styles.title}>장마리아 작품 의뢰</Text>
+            <Text>2024.06.01</Text>
+            <Text>위탁 대금 상세</Text>
+            <Text>고객 정보</Text>
+            <Button size="sm" type="clear">
+              <Text style={styles.more}>더보기</Text>
+            </Button>
+          </Card>
+          <Card>
+            <Text style={styles.title}>김선우 작가 작품 위탁</Text>
+            <Text>2024.06.01</Text>
+            <Text>위탁 대금 상세</Text>
+            <Text>고객 정보</Text>
+            <Button size="sm" type="clear">
+              <Text style={styles.more}>더보기</Text>
+            </Button>
+          </Card>
+        </View>
+      </ScrollView>
+
       <View style={styles.btm}>
         <Button
           size="lg"
@@ -143,10 +173,10 @@ export default function Contract({ navigation }) {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'space-between',
-    backgroundColor: '#fff',
+    // flex: 1,
+    // flexDirection: 'column',
+    // justifyContent: 'space-between',
+    // backgroundColor: '#fff',
   },
   wrapContainer: {
     backgroundColor: '#F2F7FF',
